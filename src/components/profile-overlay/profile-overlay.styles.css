@@ -1,0 +1,182 @@
+.close-modal {
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  font-size: 5rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+  
+.close-modal:hover {
+  color: rgb(102, 102, 102);
+}
+
+/* -------------------------- */
+/* CLASSES TO MAKE MODAL WORK */
+.hidden {
+  display: none;
+}
+  
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  height: 30%;
+
+  background-color: #111;
+  padding: 6rem;
+  border-radius: 5px;
+  box-shadow: 0 10rem 15rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+/* --------------------------- */
+
+/* Form Container Styles */
+.form-container{
+  display: flex;
+  justify-content: center;
+}
+.form-container > img{
+  width: 20%;
+}
+
+.form-input{
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+  justify-content: flex-start;
+}
+.form-input > input{
+  border: 1px solid rgb(158, 156, 156);
+  background: none;
+  color: #fff;
+  padding-left: 15px;
+  height: 40px;
+  width: 150%;
+  margin-bottom: 40px;
+  font-size: 1rem;
+}
+
+.form-input > input:hover {
+  border-color: rgb(241, 239, 239);
+}
+.switch:hover > .slider{
+  border-color: rgb(241, 239, 239);
+}
+
+.font-buttons{
+  display: flex;
+  width: 150%;
+  height: 20%;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.font-buttons > button {
+  background: none;
+  border: none;
+  color: rgb(158, 156, 156);
+  width: 47%;
+  font-size: 2rem;
+  padding-left: 0;
+}
+
+.font-buttons > button:hover{
+  color: rgb(241, 239, 239);
+}
+
+/* -------------------------- */
+
+/* Slider Bar CSS */
+
+/* The switch - the box around the slider */
+.switch {
+  /* background-color: #fff; */
+  position: relative;
+  display: inline-block;
+  width: 70%;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  /* background-color: blue; */
+  background: none;
+  position: absolute;
+  cursor: pointer;
+  width: 50%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 1px solid rgb(158, 156, 156);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 3px;
+  background-color: rgb(202, 202, 202);
+  -webkit-transition: .4s;
+  transition: .8s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(57px);
+  -ms-transform: translateX(57px);
+  transform: translateX(57px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.heading{
+  /* background-color: red; */
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 20;
+  right: 0;
+  bottom: 0;
+  color: #fff;
+}

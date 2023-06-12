@@ -1,0 +1,48 @@
+.nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px;
+    height: 30px;
+    z-index: 1;
+
+    display: flex;
+    justify-content: space-between;
+
+    /* Animations */
+    transition-timing-function: ease-in;
+    transition: all 0.5s;
+}
+
+.nav-black{
+    background-color: #111;
+}
+
+.nav-logo
+{
+    position: fixed;
+    left: 20px;
+    width: 80px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.nav-profile{
+    position: fixed;
+    right: 100px;
+    width: 70px;  
+
+    display: flex;
+    /* background-color: aqua; */
+    justify-content: space-between;
+    cursor: pointer;
+}
+.nav-profile > img{
+    height: 40px;
+}
+.nav-dropdown{
+    color: rgb(202, 202, 202);
+}
+.nav-profile:hover > .nav-dropdown{
+    color: rgb(87, 87, 87);
+}

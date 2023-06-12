@@ -1,0 +1,64 @@
+.profile-container{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 8%;
+}
+
+.profile-container-title{
+    text-align: center;
+}
+
+.profiles{
+    display: flex;
+    width: 80%;
+    padding-top: 10%;
+    padding-left: 10%;
+}
+
+.profile{
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    overflow: hidden;
+    /* background-color: gray; */
+}
+.profile > span{
+    /* background-color: #fff; */
+    color: rgb(202, 202, 202);
+    width: 200px;
+    align-self: center;
+    padding-top: 10px;
+    font-size: 25px;
+    text-align: center;
+    overflow: hidden;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.profile-avatar{
+    display: flex;
+    justify-content: center;
+}
+.profile-avatar > img{
+    width: 50%;
+}
+.icon{
+    position: absolute;
+    align-self: center;
+}
+
+/* Hover Features */
+.profile:hover{
+    cursor: pointer;
+}
+.profile-avatar:hover > img{
+    /* outline-style: solid; */
+    box-shadow: 0px 0px 5px #fff;
+}
+.profile:hover > span{
+    color: rgb(87, 87, 87);
+}

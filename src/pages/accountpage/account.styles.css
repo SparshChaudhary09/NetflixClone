@@ -1,0 +1,108 @@
+.accountpage{
+    height: 100vh;
+    /* color: white; */
+}
+
+.accountpage_body{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 8%;
+    max-width: 800px;
+}
+.accountpage_body > h1{
+    font-size: 60px;
+    font-weight: 400;
+    border-bottom: 1px solid #282c2d;
+    margin-bottom: 20px;
+}
+
+
+.accountpage_info{
+    display: flex;
+}
+.accountpage_info > img{
+    height: 100px;
+}
+
+
+.accountpage_details{
+    /* color: white; */
+    margin-left: 25px;
+    flex: 1;
+}
+.accountpage_details > h2{
+    background-color: gray;
+    padding: 15px;
+    font-size: 15px;
+    padding-left: 20px;
+}
+
+
+.accountpage_plans{
+    margin-top: 20px;
+}
+.accountpage_plans > h3{
+    border-bottom: 1px solid #282c2d;
+    padding-bottom: 10px;
+}
+.accountpage_plans > p{
+    color: gray;
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+.accountpage_plans_info{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.accountpage_plans_type{
+    display: flex;
+    justify-content: space-between;
+}
+.accountpage_plans_type{
+    color: gray;
+    font-size: 20px;
+    margin-top: 40px;
+}
+.accountpage_plans_type > button{
+    font-size: 1rem;
+    color: #fff;
+    background-color: #e50914;
+    border: none;
+    width: 20%;
+    height: 40px;
+    margin-right: 20px;
+    /* padding: 2px 20px; */
+}
+.accountpage_plans_type:hover{
+    color: rgb(83, 78, 78);
+    cursor: pointer;
+}
+.accountpage_plans_type:hover > button{
+    color: #fff;
+    background-color: #f7242e;
+}
+
+/* SignOut Button */
+.accountpage_button{
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin-top: 5%;
+    width: 100%;
+    color: #fff;
+    background-color: #e50914;
+    border: none;
+}
+.accountpage_button:hover{
+    color: #fff;
+    background-color: #f7242e;
+    cursor: pointer;
+}
